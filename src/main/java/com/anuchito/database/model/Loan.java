@@ -1,7 +1,5 @@
 package com.anuchito.database.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -38,9 +36,4 @@ public class Loan {
 
     @Column(name = "person_id", length = 50)
     private String personId;
-
-    // @ManyToOne(fetch = FetchType.LAZY)
-    // @JoinColumn(name = "person_id", referencedColumnName = "person_id")
-    // @JsonBackReference
-    // private Person person;
 }

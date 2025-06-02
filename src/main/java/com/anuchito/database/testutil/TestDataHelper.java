@@ -1,8 +1,5 @@
 package com.anuchito.database.testutil;
 
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-
 import com.anuchito.database.model.Person;
 import com.anuchito.database.dto.LoanDto;
 import com.anuchito.database.model.Loan;

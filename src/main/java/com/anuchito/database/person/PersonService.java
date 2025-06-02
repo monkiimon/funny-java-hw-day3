@@ -29,10 +29,6 @@ public class PersonService {
         return personRepository.findByPersonId(personId);
     }
 
-    // public Optional<Person> getPersonByPersonIdWithLoans(String personId) {
-    //     return personRepository.findByPersonIdWithLoans(personId);
-    // }
-
     public Optional<Person> getLoanByLoanId(String loanId) {
         return this.personRepository.findByPersonId(loanId);
     }

@@ -39,11 +39,6 @@ public class PersonController {
         return personService.getPersonByPersonId(personId);
     }
 
-    // @GetMapping("/{personId}/loans")
-    // public Optional<Person> getPersonByPersonIdWithLoans(@PathVariable String personId) {
-    //     return personService.getPersonByPersonIdWithLoans(personId);
-    // }
-
     @GetMapping("/{personId}/loans")
     public ResponseEntity<?> getPersonWithLoans(@PathVariable String personId) {
         PersonWithLoansDto result = personService.getPersonWithLoans(personId);
